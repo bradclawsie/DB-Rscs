@@ -14,6 +14,7 @@ before_install:
   - tar -xvzf go1.8.linux-amd64.tar.gz
   - mv go $HOME/.
   - export PATH=$HOME/go/bin:$PATH
+  - export GOROOT=$HOME/go
   
 install:
   - rakudobrew build zef
