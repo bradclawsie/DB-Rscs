@@ -13,8 +13,6 @@ before_install:
   - wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
   - tar -xvzf go1.8.linux-amd64.tar.gz
   - mv go $HOME/.
-  - export PATH=$HOME/go/bin:$PATH
-  - export GOROOT=$HOME/go
   
 install:
   - rakudobrew build zef
@@ -26,3 +24,5 @@ before_script:
 
 env:
   - GOPATH=$HOME/gopath  
+  - PATH=$HOME/go/bin:$PATH
+  - GOROOT=$HOME/go
