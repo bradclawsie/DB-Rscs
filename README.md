@@ -1,4 +1,5 @@
 [![License BSD](https://img.shields.io/badge/License-BSD-blue.svg)](http://opensource.org/licenses/BSD-3-Clause)
+[![Build Status](https://travis-ci.org/bradclawsie/DB-Rscs.png)](https://travis-ci.org/bradclawsie/DB-Rscs)
 
 # DB::Rscs
 
