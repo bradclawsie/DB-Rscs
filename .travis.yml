@@ -10,10 +10,12 @@ go:
 
 before_install:
   - mkdir $HOME/gopath
+  - wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
+  - tar -xzf go1.8.linux-amd64.tar.gz
   
 install:
   - rakudobrew build zef
-  - go get github.com/bradclawsie/rscs
+  - $HOME/go get github.com/bradclawsie/rscs
   
 before_script:
   - zef --/test --/test-depends install HTTP::UserAgent
