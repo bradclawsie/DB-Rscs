@@ -5,9 +5,6 @@ language: perl6
 perl6:
   - latest
 
-go:
-  - 1.8.x
-  
 install:
   - rakudobrew build zef
   - go get github.com/bradclawsie/rscs
