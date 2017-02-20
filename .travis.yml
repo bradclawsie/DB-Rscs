@@ -12,7 +12,7 @@ before_install:
   
 install:
   - rakudobrew build zef
-  
+
 before_script:
   - zef --/test --/test-depends install HTTP::UserAgent
   - zef --/test --/test-depends install JSON::Tiny
