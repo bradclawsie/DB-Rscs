@@ -12,7 +12,7 @@ BEGIN {
     $rscs-program = %*ENV{'GOPATH'} ~ '/bin/rscs';
     die "cannot execute $rscs-program" unless $rscs-program.IO.x;
 
-    $proc = Proc::Async.new('/home/brad/gopath/bin/rscs', '--memory','--port=9999');
+    $proc = Proc::Async.new($rscs-program, '--memory','--port=9999');
     $proc.stdout.tap(-> $v { print "Stdout: $v" }, quit => { say 'caught exception ' ~ .^name });
     $proc.stderr.tap(-> $v { print "Stderr: $v" });
     my $promise = $proc.start;
