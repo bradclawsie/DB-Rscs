@@ -9,10 +9,9 @@ go:
   - 1.8.x
 
 before_install:
-  - mkdir $HOME/gopath
-  - wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
-  - tar -xvzf go1.8.linux-amd64.tar.gz
-  - mv go $HOME/.
+  - mkdir -p $HOME/gopath/bin
+  - git clone https://github.com/bradclawsie/rscs-download $HOME/rscs-download
+  - mv $HOME/rscs-download/rscs $HOME/gopath/bin/.
   
 install:
   - rakudobrew build zef
@@ -25,5 +24,3 @@ before_script:
 
 env:
   - GOPATH=$HOME/gopath  
-  - PATH=$HOME/go/bin:$PATH
-  - GOROOT=$HOME/go
