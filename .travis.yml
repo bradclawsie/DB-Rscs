@@ -7,6 +7,9 @@ perl6:
 
 go:
   - 1.8.x
+
+before_install:
+  - mkdir $HOME/gopath
   
 install:
   - rakudobrew build zef
@@ -15,3 +18,6 @@ install:
 before_script:
   - zef --/test --/test-depends install HTTP::UserAgent
   - zef --/test --/test-depends install JSON::Tiny
+
+env:
+  - GOPATH=$HOME/gopath  
