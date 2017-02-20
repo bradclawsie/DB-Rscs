@@ -15,7 +15,7 @@ before_install:
   
 install:
   - rakudobrew build zef
-  - $HOME/go get github.com/bradclawsie/rscs
+  - $HOME/go/bin/go get github.com/bradclawsie/rscs
   
 before_script:
   - zef --/test --/test-depends install HTTP::UserAgent
