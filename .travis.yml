@@ -12,6 +12,7 @@ before_install:
   - mkdir $HOME/gopath
   - wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
   - tar -xvzf go1.8.linux-amd64.tar.gz
+  - mv go $HOME/.
   
 install:
   - rakudobrew build zef
