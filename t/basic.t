@@ -107,3 +107,5 @@ subtest {
         $rscs.update('');
     }, 'delete no key';
 }, 'delete';
+
+done-testing;
