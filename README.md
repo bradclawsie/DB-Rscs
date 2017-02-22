@@ -6,7 +6,7 @@
 A client library for the **R**idiculously **S**imple **C**onfiguration
 **S**ystem. [https://github.com/bradclawsie/rscs](https://github.com/bradclawsie/rscs) 
 
-(also available at gitlab: [https://gitlab.com/bradclawsie/rscs](https://gitlab.com/bradclawsie/rscs) )
+(also available at gitlab: [https://gitlab.com/bradclawsie/rscs](https://gitlab.com/bradclawsie/rscs))
 
 RSCS only stores keys and values and only allows simple CRUD
 operations. It is supposed to underwhelm you.
