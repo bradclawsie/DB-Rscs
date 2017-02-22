@@ -7,8 +7,17 @@ our $rscs-program;
 our $proc;
 
 BEGIN {
-    say 'pre-test tasks';
     $addr = 'http://localhost:9999';
+    unless %*ENV{'TRAVIS'}.defined && %*ENV{'CI'}.defined {
+        say 'This library depends on a Go program:';
+        say 'https://github.com/bradclawsie/rscs';
+        say 'These tests are intended to be run primarily on Travis:';
+        say 'https://travis-ci.org/bradclawsie/DB-Rscs';
+        done-testing;
+        exit(0);
+    }
+    say 'pre-test tasks';
+    die "no GOPATH set" unless %*ENV{'GOPATH'}.defined && %*ENV{'GOPATH'}.IO.d;
     $rscs-program = %*ENV{'GOPATH'} ~ '/bin/rscs';
     die "cannot execute $rscs-program" unless $rscs-program.IO.x;
 

@@ -40,7 +40,7 @@ This module is licensed under the BSD license, see: https://b7j0c.org/stuff/lice
 
 =end pod
 
-unit module DB::Rscs:auth<bradclawsie>:ver<0.0.1>;
+unit module DB::Rscs:auth<bradclawsie>:ver<0.0.2>;
 
 constant $DEFAULT_ADDR is export  = <http://localhost:8081>;
 constant $STATUS_PATH is export = '/v1/status';
