@@ -29,6 +29,20 @@ $rscs.update($key,'a new val');
 $rscs.delete($key);
 ```
 
+## TESTING
+
+DB::Rscs has a unit test file that will only be run in full through
+the Travis CI link https://travis-ci.org/bradclawsie/DB-Rscs which
+is the target of the build badge above. During installation via `zef`
+the full test suite is not run since it requires a local executable
+copy of the `rscs` daemon (https://travis-ci.org/bradclawsie/rscs),
+which I do not want to install as part of the installation process. I
+expect users will obtain this program on their own using the command
+`go get github.com/bradclawsie/rscs`. 
+
+If you wish to run the unit tests *afer* installation, just set the
+environment variables `TRAVIS` and `CI` to be true and rerun the tests.
+
 ## AUTHOR
 
 Brad Clawsie (PAUSE:bradclawsie, email:brad@b7j0c.org)
