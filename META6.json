@@ -1,6 +1,7 @@
 {
     "perl" : "6.*",
     "name" : "DB::Rscs",
+    "license" : "BSD-2-Clause",
     "version" : "0.0.2",
     "description" : "A client library for the Ridiculously Simple Configuration System",
     "author" : "Brad Clawsie",
